@@ -172,4 +172,3 @@ tipoUsuario* manejarUsuarios(Map* usuarios, tipoUsuario* usuarioActual){
   }
   return usuarioActual;
 }
-0

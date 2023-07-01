@@ -111,6 +111,7 @@ void verHistorial(tipoUsuario* usuarioActual){
         printf("Apostaste %.2f\n",aux->cantidad);
         break;
       case GANANCIA:
+        //damn daniel
         printf("Ganaste %.2f\n",aux->cantidad);
         break;
     }
