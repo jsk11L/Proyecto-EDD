@@ -50,7 +50,7 @@ void retirarDinero(tipoUsuario* usuarioActual){
     printf("No tienes dinero para retirar.\n");
     menuBalance(usuarioActual);
   }
-  printf(" == Cuanto dinero desea retirar? == \n");
+  printf(" === Cuanto dinero desea retirar? === \n");
   for(int i = 1; i < 10; i++){
     printf("-%i- %i \n",i,i*5000);
   }
