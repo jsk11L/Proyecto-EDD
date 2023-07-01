@@ -17,13 +17,13 @@ del código de GitHub a Replit. Eso se puede lograr mediante la opción Clone qu
 - Para la ejecución y compilación del programa para la versión de Visual Studio Code procedemos a descargar
 el siguiente archivo que contiene lo necesario:
 
-[https://drive.google.com/file/d/1Klt6amg0scCBnSkDP6eOWKaAaMnQuezb/view?usp=sharing]
+[https://drive.google.com/file/d/1ahJ3uIgqbIcvhfRraj9DVJiufGI3ZoTs/view?usp=sharing]
 
 
 - En este .rar tendremos que extraer e ingresar a la carpeta. En esta instancia podremos iniciar el .exe
 de forma correcta y veremos el funcionamiento de la aplicación.
 
-![image](image_3.png)
+![image](image_4.png)
 
 
 ===== 2 - LO QUE FUNCIONA Y LO QUE NO =====
