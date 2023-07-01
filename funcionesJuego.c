@@ -106,7 +106,7 @@ void jackpotCherry(tipoUsuario* usuarioActual){
         for(int j = 0; j < 3; j++){
           switch(usuarioActual->dificultad){
             case 1:
-              resultados[i][j].valor = rand();
+              resultados[i][j].valor = rand() % 340000;
               if(resultados[i][j].valor < 0) resultados[i][j].valor *= -1;
               break;        
             
@@ -232,19 +232,16 @@ void calcularResultado(tipoResult resultados[][3], float apuesta, tipoUsuario* u
     for(int j = 0; j < 3; j++){
       switch(usuarioActual->dificultad){
         case 1:
-          if(resultados[i][j].valor < 340001){
+          if(resultados[i][j].valor < 340001 && resultados[i][j].valor > 300000){
             resultados[i][j].dibujo = CEREZA;
           }
-          if(resultados[i][j].valor < 300001){
-            resultados[i][j].dibujo = SIETE;
-          }
-          if(resultados[i][j].valor < 200001){
-            resultados[i][j].dibujo = BAR;
-          }
-          if(resultados[i][j].valor < 100001){
+          if(resultados[i][j].valor < 300001 && resultados[i][j].valor > 200000){
             resultados[i][j].dibujo = DIAMANTE;
           }
-          if(resultados[i][j].valor < 50001){
+          if(resultados[i][j].valor < 200001 && resultados[i][j].valor > 130000){
+            resultados[i][j].dibujo = SIETE;
+          }
+          if(resultados[i][j].valor < 130001 && resultados[i][j].valor > 0){
             resultados[i][j].dibujo = CAMPANA;
           }
           break;
