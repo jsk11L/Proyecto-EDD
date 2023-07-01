@@ -28,9 +28,7 @@ de forma correcta y veremos el funcionamiento de la aplicación.
 
 ===== 2 - LO QUE FUNCIONA Y LO QUE NO =====
 
-- En gran parte se logró con el objetivo del proyecto. El menú se logró implementar de forma correcta y
-en tiempo real que era la principal idea para que el aspecto del programa cumpliera con una atracción
-visual para el usuario.
+- En gran parte se logró con el objetivo del proyecto. El menú se logró implementar de forma correcta y en tiempo real que era la principal idea para que el aspecto del programa cumpliera con una atracción visual para el usuario.
   
 
 ===== 3 - HERRAMIENTAS UTILIZADAS =====
@@ -38,8 +36,9 @@ visual para el usuario.
 Las herramientas usadas en esencia fueron:
 
 - Replit [https://replit.com/] : Se logró el trabajo en equipo mediante replit, donde pudimos analizar y cambiar grupalmente el código.
-- GitHub [https://github.com] : El GitHub nos ayudó a implementar el repositorio y hacer el seguimiento con los
-commits.
+
+- GitHub [https://github.com] : El GitHub nos ayudó a implementar el repositorio y hacer el seguimiento con los commits.
+ 
 - VS Code [https://code.visualstudio.com/] : Visual Studio Code fue clave para la implementación de una librería de terceros (rlutil.h) junto a conio.h y windows.h, ya que no era posible su implementación en replit para tener una consola (.exe) que cumpliera con nuestro objetivo.
 
 

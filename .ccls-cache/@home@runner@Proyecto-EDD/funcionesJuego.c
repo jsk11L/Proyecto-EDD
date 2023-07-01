@@ -211,6 +211,7 @@ void elegirDificultad(tipoUsuario* usuarioActual){
   printf("1 -> Fácil\n");
   printf("2 -> Medio\n");
   printf("3 -> Difícil\n\n");
+  printf("4.-:")
   printf("Ingresa una opción: ");
   int opcion = 0;
   scanf("%i",&opcion);
@@ -247,12 +248,19 @@ void extras(tipoUsuario* usuarioActual){
   printf("1.- Mostrar dibujos al jugar\n");
   printf("2.- Mostrar nombre del dibujo resultante\n");
   printf("3.- Mostrar número randomizado obtenido\n");
+  printf("4.- Volver al menú\n ")
   printf("Ingresa una opción: ");
   scanf("%i",&opcion);
-  while(opcion > 3 || opcion < 1){
+  while(opcion > 4 || opcion < 1){
     printf("Ingrese una opción válida: ");
     scanf("%i",&opcion);
   }
+
+  
+  if(opcion == 4) {
+    menuJuego(usuarioActual);
+  }
+  
   usuarioActual->modo = opcion;
   menuJuego(usuarioActual);
 }
