@@ -313,19 +313,19 @@ void calcularResultado(tipoResult resultados[][3], float apuesta, tipoUsuario* u
           break;
         
         case 3:
-          if(resultados[i][j].valor < 1000001){
+          if(resultados[i][j].valor < 1000001 && resultados[i][j].valor > 889000){
             resultados[i][j].dibujo = CEREZA;
           }
-          if(resultados[i][j].valor < 889001){
+          if(resultados[i][j].valor < 889001 && resultados[i][j].valor > 650000){
             resultados[i][j].dibujo = BAR;
           }
-          if(resultados[i][j].valor < 650001){
+          if(resultados[i][j].valor < 650001 && resultados[i][j].valor > 292000){
             resultados[i][j].dibujo = SIETE;
           }
-          if(resultados[i][j].valor < 292001){
+          if(resultados[i][j].valor < 292001 && resultados[i][j].valor > 146000){
             resultados[i][j].dibujo = CAMPANA;
           }
-          if(resultados[i][j].valor < 146001){
+          if(resultados[i][j].valor < 146001 && resultados[i][j].valor > 0){
             resultados[i][j].dibujo = DIAMANTE;
           }
           break;
