@@ -111,7 +111,6 @@ void verHistorial(tipoUsuario* usuarioActual){
         printf("Apostaste %.2f\n",aux->cantidad);
         break;
       case GANANCIA:
-        //damn daniel
         printf("Ganaste %.2f\n",aux->cantidad);
         break;
     }
@@ -147,7 +146,7 @@ void menuBalance(tipoUsuario* usuarioActual){
     printf("1. Ingresar dinero\n");
     printf("2. Retirar dinero\n");
     printf("3. Ver historial de movimientos\n");
-    printf("4. Volver\n");
+    printf("4. Volver al Menú Principal\n");
     printf("==============================================================\n");
     printf("Ingresa una opción: ");
 
