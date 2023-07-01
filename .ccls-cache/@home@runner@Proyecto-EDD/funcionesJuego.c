@@ -217,8 +217,8 @@ void elegirDificultad(tipoUsuario* usuarioActual){
   scanf("%i",&opcion);
   while(1){
     if(opcion < 1 || opcion > 4) printf("Ingresa una opción válida\n");
-    else if (opcion == 2 && usuarioActual->difM == false) printf("No has desbloqueado la dificultad media.\n");
-    else if (opcion == 3 && usuarioActual->difD == false) printf("No has desbloqueado la dificultad difícil.\n");
+    else if (opcion == 2 && usuarioActual->difM == false) printf("No has desbloqueado la dificultad media!\n");
+    else if (opcion == 3 && usuarioActual->difD == false) printf("No has desbloqueado la dificultad difícil!\n");
     else break;
     printf("Ingresa una opción: ");
     scanf("%i",&opcion);
@@ -259,7 +259,7 @@ void extras(tipoUsuario* usuarioActual){
     printf("Ingrese una opción válida: ");
     scanf("%i",&opcion);
   }
-
+  
   
   if(opcion == 4) {
     menuJuego(usuarioActual);
