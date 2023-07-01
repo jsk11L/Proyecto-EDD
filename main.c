@@ -7,7 +7,7 @@
 #include <string.h>
 
 int main(){
-  Map* usuarios = createMap(is_equal_string);
+  /*Map* usuarios = createMap(is_equal_string);
   
   tipoUsuario *usuarioActual = NULL;
    
@@ -64,6 +64,114 @@ int main(){
       printf("Cerrando el juego...\n");
       return 0;
     }
+  }*/
+  tipoResult resultados[3][3];
+  int dificultad = 2;
+  int contadorG = 0;
+  int contadorP = 0;
+  int contadorB = 0;
+  int contadorPremios = 0;
+  bool gano = false;
+  for(int vez = 0; vez < 10000; vez++){
+    contadorPremios = 0;
+    gano = false;
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+          resultados[i][j].valor = rand() % 680000;
+          if(resultados[i][j].valor < 0) resultados[i][j].valor *= -1;
+        }
+      }
+    
+    for(int i = 0; i < 3; i++){
+      for(int j = 0; j < 3; j++){
+        switch(dificultad){
+          case 1:
+            if(resultados[i][j].valor < 340001){
+              resultados[i][j].dibujo = CEREZA;
+            }
+            if(resultados[i][j].valor < 300001){
+              resultados[i][j].dibujo = SIETE;
+            }
+            if(resultados[i][j].valor < 200001){
+              resultados[i][j].dibujo = BAR;
+            }
+            if(resultados[i][j].valor < 100001){
+              resultados[i][j].dibujo = DIAMANTE;
+            }
+            if(resultados[i][j].valor < 50001){
+              resultados[i][j].dibujo = CAMPANA;
+            }
+            break;
+          
+          case 2:
+            if(resultados[i][j].valor < 680001){
+              resultados[i][j].dibujo = CEREZA;
+            }
+            if(resultados[i][j].valor < 600001){
+              resultados[i][j].dibujo = SIETE;
+            }
+            if(resultados[i][j].valor < 400001){
+              resultados[i][j].dibujo = BAR;
+            }
+            if(resultados[i][j].valor < 200001){
+              resultados[i][j].dibujo = DIAMANTE;
+            }
+            if(resultados[i][j].valor < 100001){
+              resultados[i][j].dibujo = CAMPANA;
+            }
+            break;
+          
+          case 3:
+            if(resultados[i][j].valor < 1000001){
+              resultados[i][j].dibujo = CEREZA;
+            }
+            if(resultados[i][j].valor < 889001){
+              resultados[i][j].dibujo = BAR;
+            }
+            if(resultados[i][j].valor < 650001){
+              resultados[i][j].dibujo = SIETE;
+            }
+            if(resultados[i][j].valor < 292001){
+              resultados[i][j].dibujo = CAMPANA;
+            }
+            if(resultados[i][j].valor < 146001){
+              resultados[i][j].dibujo = DIAMANTE;
+            }
+            break;
+          }
+        }
+      }
+    
+    for(int i = 0; i < 3; i++){
+      if(resultados[i][0].dibujo == resultados[i][1].dibujo && resultados[i][0].dibujo == resultados[i][2].dibujo){
+        contadorPremios++;
+        gano = true;
+      }
+      if(resultados[0][i].dibujo == resultados[1][i].dibujo && resultados[0][i].dibujo == resultados[2][i].dibujo){
+        contadorPremios++;
+        gano = true;
+      }
+    }
+  
+    if(resultados[0][0].dibujo == resultados[1][1].dibujo && resultados[0][0].dibujo == resultados[2][2].dibujo){
+      contadorPremios++;
+      gano = true;
+    }
+  
+    if(resultados[0][2].dibujo == resultados[1][1].dibujo && resultados[0][2].dibujo == resultados[2][0].dibujo){
+      contadorPremios++;
+      gano = true;
+    }
+
+    if(gano == true) contadorG++;
+    else contadorP++;
+    if(contadorPremios > 2) contadorB++;
   }
+
+  printf("DE 10000 TIRADAS: \n");
+  printf("GANASTE : %i VECES\n",contadorG);
+  printf("PERDISTE : %i VECES\n",contadorP);
+  printf("OBTUVISTE RONDAS BONUS : %i VECES\n",contadorB);
+  
   return 0;
 }
