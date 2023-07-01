@@ -565,7 +565,7 @@ void menuJuego(tipoUsuario* usuarioActual){
         extras(usuarioActual);
         break;
       case 4:
-        printf("Volviendo al menú principal...\n");
+        printf("Regresando al menú principal...\n");
         return;
         break;
     }
