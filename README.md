@@ -25,6 +25,8 @@ de forma correcta y veremos el funcionamiento de la aplicación.
 
 ![image](image_4.png)
 
+*** Destacar que la versión final del proyecto es la de ***VS Code***, siendo replit una demostración de los commits realizados.
+
 
 ===== 2 - LO QUE FUNCIONA Y LO QUE NO =====
 
