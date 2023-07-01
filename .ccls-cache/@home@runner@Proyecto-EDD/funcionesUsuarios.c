@@ -116,8 +116,6 @@ tipoUsuario* manejarUsuarios(Map* usuarios, tipoUsuario* usuarioActual){
   char usuario[30] = "";
   char contrasena[30] = "";
   int contador = 1;
-
-  
   
   tipoUsuario * aux = firstMap(usuarios);
   if(aux == NULL){
@@ -174,3 +172,4 @@ tipoUsuario* manejarUsuarios(Map* usuarios, tipoUsuario* usuarioActual){
   }
   return usuarioActual;
 }
+0
