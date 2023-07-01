@@ -210,13 +210,13 @@ void elegirDificultad(tipoUsuario* usuarioActual){
   printf("- NIVELES DE DIFICULTAD -\n");
   printf("1 -> Fácil\n");
   printf("2 -> Medio\n");
-  printf("3 -> Difícil\n\n");
-  printf("4.-:")
+  printf("3 -> Difícil\n");
+  printf("4.-> Volver al menú\n\n");
   printf("Ingresa una opción: ");
   int opcion = 0;
   scanf("%i",&opcion);
   while(1){
-    if(opcion < 1 || opcion > 3) printf("Ingresa una opción válida\n");
+    if(opcion < 1 || opcion > 4) printf("Ingresa una opción válida\n");
     else if (opcion == 2 && usuarioActual->difM == false) printf("No has desbloqueado la dificultad media.\n");
     else if (opcion == 3 && usuarioActual->difD == false) printf("No has desbloqueado la dificultad difícil.\n");
     else break;
@@ -224,7 +224,11 @@ void elegirDificultad(tipoUsuario* usuarioActual){
     scanf("%i",&opcion);
   }
 
-  printf("\n DIFICULTAD SELECCIONADA : ");
+  if(opcion == 4) {
+    menuJuego(usuarioActual);
+  }
+
+  printf("\n DIFICULTAD SELECCIONADA : %i\n",opcion);
   switch(opcion){
     case 1:
       printf("Fácil\n");
@@ -248,7 +252,7 @@ void extras(tipoUsuario* usuarioActual){
   printf("1.- Mostrar dibujos al jugar\n");
   printf("2.- Mostrar nombre del dibujo resultante\n");
   printf("3.- Mostrar número randomizado obtenido\n");
-  printf("4.- Volver al menú\n ")
+  printf("4.- Volver al menú\n ");
   printf("Ingresa una opción: ");
   scanf("%i",&opcion);
   while(opcion > 4 || opcion < 1){
