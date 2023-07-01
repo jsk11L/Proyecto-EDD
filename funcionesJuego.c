@@ -260,7 +260,7 @@ void extras(tipoUsuario* usuarioActual){
     scanf("%i",&opcion);
   }
   
-  
+  //hola araya
   if(opcion == 4) {
     menuJuego(usuarioActual);
   }
