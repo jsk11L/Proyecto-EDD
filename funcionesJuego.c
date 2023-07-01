@@ -77,11 +77,11 @@ void instrucciones() {
 
   printf("//////////////////INSTRUCCIONES//////////////////\n\n");
   
-  printf("Bienvenido a las instrucciones de JackPotCherry\n");
+  printf("Bienvenido a las instrucciones de JackPot Cherry!\n");
 
   printf("-------------------------------------------------\n");
   
-  printf("Objetivo del juego\n\n");
+  printf("Objetivo del juego:\n\n");
   
   printf("El objetivo esencial del juego es la diversión y el entretenimiento.\n\n");
   printf("El juego en sí consiste en una máquina 'tragamonedas' que contiene una cantidad de 5 símbolos\n");
@@ -260,7 +260,6 @@ void extras(tipoUsuario* usuarioActual){
     scanf("%i",&opcion);
   }
   
-  //hola araya
   if(opcion == 4) {
     menuJuego(usuarioActual);
   }
