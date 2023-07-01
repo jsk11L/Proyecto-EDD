@@ -33,12 +33,13 @@ int main(){
     printf("3. Manejar usuarios\n");
     printf("4. Manejar balance\n");
     printf("5. Jugar\n");
-    printf("6. Salir\n");
+    printf("6. Instrucciones\n");
+    printf("7. Salir\n");
     printf("==============================================================\n");
     printf("Ingresa una opción: ");
 
     scanf("%d", &opcion);
-    while (opcion < 1 || opcion > 6) {
+    while (opcion < 1 || opcion > 7) {
       printf("Ingresa una opción válida: ");
       scanf("%d", &opcion);
     }
@@ -60,7 +61,11 @@ int main(){
     case 5:
       menuJuego(usuarioActual);
       break;
+
     case 6:
+      instrucciones();
+      break;
+    case 7:
       printf("Cerrando el juego...\n");
       return 0;
     }

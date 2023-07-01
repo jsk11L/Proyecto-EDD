@@ -72,6 +72,42 @@ void printFigura(Figura dibujo, int linea){
   } 
 }
 
+void instrucciones() {
+  char respuesta[30];
+
+  printf("//////////////////INSTRUCCIONES//////////////////\n\n");
+  
+  printf("Bienvenido a las instrucciones de JackPotCherry\n");
+
+  printf("-------------------------------------------------\n");
+  
+  printf("Objetivo del juego\n\n");
+  
+  printf("El objetivo esencial del juego es la diversión y el entretenimiento.\n\n");
+  printf("El juego en sí consiste en una máquina 'tragamonedas' que contiene una cantidad de 5 símbolos\n");
+  printf("posibles para su aparición, cada uno tiene un %% distinto de aparición.\n");
+  printf("Los símbolos son: DIAMANTE, CEREZA, SIETE, BAR Y CAMPANA.\n\n");
+  
+  printf("-------------------------------------------------\n");
+  
+  printf("Hablando ya en base al objetivo que conlleva el juego nos encontramos con que el objetivo principal\n");
+  printf("es el de obtener una combinación ganadora de símbolos al momento de hacer la apuesta.\n");
+  printf("-------------------------------------------------\n");
+
+  
+  printf("Combinaciones ganadoras\n\n");
+  
+  printf("Las posibles formas ganadoras son: FILA, COLUMNA, DIAGONAL Y DIAGONAL INVERTIDA.\n");
+  printf("Si se consigue una sucesión de los 3 simbolos iguales en alguna de las formas mencionadas se gana\n");
+  printf("-------------------------------------------------\n\n");
+
+  printf(" Ingresa cualquier caracter para volver al menú principal!\n");
+  
+  scanf("%c",&respuesta);
+  return;
+}
+
+
 void jackpotCherry(tipoUsuario* usuarioActual){
   tipoResult resultados[3][3];
   char respuesta[100];
