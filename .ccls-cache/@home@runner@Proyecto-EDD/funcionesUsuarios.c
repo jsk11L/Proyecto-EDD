@@ -117,6 +117,8 @@ tipoUsuario* manejarUsuarios(Map* usuarios, tipoUsuario* usuarioActual){
   char contrasena[30] = "";
   int contador = 1;
 
+  
+  
   tipoUsuario * aux = firstMap(usuarios);
   if(aux == NULL){
     printf("No hay ningún usuario ingresado.\n");
