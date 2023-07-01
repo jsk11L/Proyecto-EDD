@@ -322,8 +322,10 @@ void calcularResultado(tipoResult resultados[][3], float apuesta, tipoUsuario* u
   printf("\n");
   printf("======================\n");
   printf("GANANCIAS: %10.2f\n",premio);
+  printf("DINERO:    %10.2f\n", usuarioActual->dinero);
   printf("======================\n\n");
 
+  usuarioActual->dinero += premio;
   if(usuarioActual->dificultad == 1 && contadorPremios > 2){
     printf("Obtuviste más de 2 premios! Obtienes %i ronda(s) bonus!\n",contadorPremios-2);
     usuarioActual->bonus += contadorPremios-2;
@@ -337,7 +339,7 @@ void calcularResultado(tipoResult resultados[][3], float apuesta, tipoUsuario* u
     usuarioActual->bonus += contadorPremios-4;
   }
   
-  usuarioActual->dinero += premio;
+  
   usuarioActual->gananciasTotales+= premio;
   verificarDificultades(usuarioActual);
   registro->cantidad = premio;
