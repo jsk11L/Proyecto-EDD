@@ -115,7 +115,7 @@ void jackpotCherry(tipoUsuario* usuarioActual){
   
   while(1){
     float apuesta = 0;
-    printf("->Cuanto vas a apostar?\n");
+    printf("-> ¿Cuanto vas a apostar?\n");
     switch(usuarioActual->dificultad){
       case 1:
         printf("->Por tu dificultad, puedes apostar entre ¥100 y ¥500.\n");
