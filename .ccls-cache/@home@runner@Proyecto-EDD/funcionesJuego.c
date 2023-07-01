@@ -136,7 +136,7 @@ void jackpotCherry(tipoUsuario* usuarioActual){
     while(usuarioActual->bonus > 0){
       usuarioActual->bonus--;
       if(usuarioActual->bonus != 0){
-        printf("\n\n RONDA BONUS ! \n\n");
+        printf("\n\n RONDA BONUS !!! \n\n");
       }
       for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
